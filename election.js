@@ -32,8 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
       ul.addEventListener('submit', function(e) {
         e.preventDefault();
-        form = e.target
+        var form = e.target
         input = form.querySelector('input');
+
         $.ajax({
           url: form.action,
           method: 'POST',
